@@ -1,3 +1,18 @@
+Informações úteis:
+ng new mapit
+
+ao aplicar ng serve deu erros de compilação provavelmente devido a um conflito de tipos entre o Angular e as definições de tipos do Node.js. Isso pode acontecer especialmente se o seu ambiente está usando versões conflitantes de pacotes ou se as definições de tipos do Node.js estão sendo incluídas no projeto Angular de maneira incorreta.
+
+Verificar versão do typescript:
+No sistema
+tsc --version
+
+No projeto
+npx tsc --version
+
+Ao atualizar a versão do typescript que era 4.7.x para 4.8 resolveu
+npm install --save-dev typescript@4.8
+-------------------------------------
 # Mapit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
